@@ -1,23 +1,17 @@
 
 import { initializeApp } from "firebase/app";
-import {getStorage, ref, uploadBytes} from 'firebase/storage';
-import {v4} from 'uuid'
+import {getFirestore} from '@firebase/firestore'
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAI5v6cnjhMM0sb1K8-VcLyzowWC7Cb9PQ",
-  authDomain: "produccion-fotografica.firebaseapp.com",
-  projectId: "produccion-fotografica",
-  storageBucket: "produccion-fotografica.appspot.com",
-  messagingSenderId: "681548749620",
-  appId: "1:681548749620:web:e29ba295c39d759d4aa361"
+  apiKey: "AIzaSyBISbIopF54r5LltGNDvYkWhpxlJGvGS8o",
+  authDomain: "produccion-fotografica-512c5.firebaseapp.com",
+  projectId: "produccion-fotografica-512c5",
+  storageBucket: "produccion-fotografica-512c5.appspot.com",
+  messagingSenderId: "475659641364",
+  appId: "1:475659641364:web:070cb1b940a838d6b3fd01"
 };
 
 
 const app = initializeApp(firebaseConfig);
-export const storage = getStorage(app);
+export const dataBase = getFirestore(app)
 
-export function uploadFile(file) {
-    const storageRef= ref(storage, v4());
-    uploadBytes(storageRef, file).then((snapshot)=> {
-        console.log(snapshot);
-    })
-}

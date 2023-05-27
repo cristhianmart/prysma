@@ -143,7 +143,6 @@
 .contacto-form {
 
   background-color: black;
-
   border: solid 1px #f3c623 ;
   width: 60%;
   height: 600px;
@@ -167,6 +166,12 @@
   border-bottom: solid 1px #f3c623;
   width: 50%;
   margin: 0 auto;
+  color: #f3c23f;
+}
+
+.contacto-input:-webkit-autofill,
+.contacto-input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
 }
 
 .contacto-ta {
@@ -175,7 +180,7 @@
   background-color: black;
   border: none;
   border-bottom: solid 1px #f3c623;
-
+  color: #f3c23f;
 }
 
 .contacto-label {

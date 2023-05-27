@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import login from '../../assets/images/login2.JPG'
 import { useNavigate } from 'react-router-dom'
 
@@ -7,8 +7,8 @@ const Login = () => {
     const [usuario, setUsuario] = useState('')
     const [contraseña, setContraseña] = useState('')
 
-    function validar (usuario, contraseña) {
-        if (usuario=='cristhian' && contraseña=='1234'){
+    function validar (user, password) {
+        if (user=='cristhian' && password=='1234'){
                 redireccion('/');
         } 
 
@@ -36,6 +36,7 @@ const Login = () => {
             <div className='burbujas'></div>
             <div className='burbujas'></div>
             <div className='burbujas'></div>
+
         </section>
     )
 }
