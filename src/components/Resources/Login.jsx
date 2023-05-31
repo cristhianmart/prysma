@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import {useState } from 'react';
 import login from '../../assets/images/login2.JPG'
 import { useNavigate } from 'react-router-dom'
 
@@ -9,7 +9,7 @@ const Login = () => {
 
     function validar (user, password) {
         if (user=='cristhian' && password=='1234'){
-                redireccion('/');
+                redireccion('/subirimg');
         } 
 
     }
@@ -22,7 +22,7 @@ const Login = () => {
                 <form className='form-cont'>
                     <input type="text" placeholder='Ingrese nombre de usuario' className='login-input' onChange={(e)=>setUsuario(e.target.value)} />
                     <input type="password" placeholder='Ingrese contraseña' className='login-input' onChange={(e)=>setContraseña(e.target.value)} />
-                    <input type='button' className='boton-login'onClick={validar(usuario, contraseña)} value={'ingresar'}/>
+                    <input type='button' className='boton-login'onClick={()=>(validar(usuario, contraseña))} value={'ingresar'}/>
                 </form>
             </section>
 

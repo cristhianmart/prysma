@@ -133,6 +133,7 @@
 /* inicia contacto*/
 .contacto-formcont {
   background: linear-gradient(90deg, black 60%, #f3c623);
+  
   height: 90vh;
   width: 100%;
   display: flex;
@@ -277,7 +278,7 @@ height: 100%;
 
 /*inicia crearprod*/
 .panel-container {
-  background: linear-gradient(90deg, #f3c623, black 30%);
+  background: linear-gradient(90deg, black 60%, #f3c23f);
   
 }
 
@@ -291,6 +292,7 @@ height: 100%;
   justify-content: center;
   
 }
+
 
 .panel-carga {
 
@@ -346,9 +348,6 @@ height: 100%;
 
 }
 
-.checkbox {
-  margin-right: 500px;
-}
 
 .guardar {
   background-color: #f3c23f;
@@ -361,6 +360,10 @@ height: 100%;
 
 .texto {
   width: 70%;
+}
+
+.btn-admi {
+  width: 1000px;
 }
 
 /*termina crearprod*/
@@ -496,6 +499,7 @@ height: 100%;
   border-radius: 10px;
 }
 /* termina login*/
+
 
 
 @media screen and (max-width:480px) {

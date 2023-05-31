@@ -3,6 +3,7 @@ import Home from "./components/Resources/Home"
 import Contacto from "./components/Resources/Contacto"
 import Biografia from "./components/Resources/Biografia"
 import Login from "./components/Resources/Login"
+import Admimg from "./Admimg"
 
 
 const router = createBrowserRouter ([
@@ -22,8 +23,13 @@ const router = createBrowserRouter ([
     errorElement: <h1>Erros 404: pagina no encontrada</h1>
   },
   {
-    path: '/login',
+    path: '/admi',
     element: <Login/>,
+    errorElement: <h1>Erros 404: pagina no encontrada</h1>
+  },
+  {
+    path: '/subirimg',
+    element: <Admimg/>,
     errorElement: <h1>Erros 404: pagina no encontrada</h1>
   },
 
